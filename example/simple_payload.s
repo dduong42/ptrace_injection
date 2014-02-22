@@ -2,10 +2,6 @@
 %define FORK 57
 %define EXIT 60
 
-GLOBAL _start:
-
-_start:
-
 push rax
 push rdi
 push rsi
@@ -17,7 +13,6 @@ lea rsi, [rel string]
 mov rdx, end_string - string
 syscall
 
-end:
 pop rdx
 pop rsi
 pop rdi
